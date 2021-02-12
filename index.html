@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 id="title">The Survey Form</h1>
+        <p id="description">The information about keeping up with new video games</p>
+        <form action="#" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Number of games you own?</label>
+                <input type="number" id="number" name="number" min="0" max="100" class="form-control"
+                    placeholder="number">
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Main system for gaming?</label>
+                <select id="dropdown" name="dropdown" class="form-control" required>
+                    <option value="pc">PC</option>
+                    <option value="mac">MAC</option>
+                    <option value="play">Playstation</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="linux">Linux</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>How many systems do you own?</p>
+                <label for="one"><input type="radio" name="name" id="one" value="one" checked>
+                    One</label>
+                <label for="two"><input type="radio" name="name" id="two" value="two">
+                    Two</label>
+                <label for="three"><input type="radio" name="name" id="three" value="three">
+                    Three</label>
+                <label for="more"><input type="radio" name="name" id="more" value="more">
+                    4 or more</label>
+            </div>
+
+            <div class="form-group">
+                <p>Favourite type of games</p>
+                <label for="shooter"><input type="checkbox" id="shooter" value="shooter" checked>Shooter</label>
+                <label for="sports"><input type="checkbox" id="sports" value="sports">
+                    Sports</label>
+                <label for="rpg"><input type="checkbox" id="rpg" value="rpg">
+                    RPG</label>
+            </div>
+
+            <div class="form-group">
+                <p><label for="moretext">Do you have any more thoughts..</label></p>
+                <textarea id="moretext" name="moretext" placeholder="Enter your thoughts here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button id="submit" name="submit" class="button-submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</body>
+
+</html>
